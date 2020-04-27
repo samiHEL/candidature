@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Formulaire de candidature pour un poste de développeur PHP</legend>
+			<form action="recapitulation.php" method="GET" name="formulaire" >
+				<p>
+				<label>Civilité: </label>
+				<select name="civilité" size="1">
+                    <option value="M." checked />Monsieur
+                    <option value="Mme." />Madame
+                    <option value="Melle." />Mademoisselle
+                 </select>
+                </p>
+                 
+				<p>
+					<label>Nom :</label>
+					<input type="text" name="nom" placeholder="Saisir votre nom" required>
+				</p>
+				
+				
+				<p>
+					<label>Prenom :</label>
+					<input type="text" name="prenom" placeholder="Saisir votre prenom" required>
+				</p>
+				
+				<p>
+					<label>Date de naissance :</label>
+					<input type="text" name="date" placeholder="Saisir votre date de naissance" required>
+				</p>
+				
+				<p>
+					<label>Numéro de téléphone :</label>
+					<input type="text" name="tel" placeholder="Saisir votre numéro de télépĥone" required>
+				</p>
+				
+				<label>Adresse électronique:</label>
+					<input type="text" name="email" placeholder="Saisir votre adresse électronique" required>
+				<p>
+				<label>Votre niveau en PHP:</label>
+				</p>
+				
+				<p>
+				<select name="niveau" size="4" multiple>
+					 <option value="débutant">Débutant</option> 
+					 <option value="moyen">Moyen</option>
+					 <option value="bon">Bon</option>  
+					 <option value="excellent">Excellent</option> 
+				</select>
+				</p>
+				
+				<p>
+					<label>Frameworks PHP déjà pratiqués:</label>
+					<input type="text" name="frameworks" placeholder="Saisir les frameworks déjà pratiqués" />
+				</p>
+					
+				<p>
+				<textarea name="commentaire" rows="8" cols="45">
+					Présentation de votre parcours
+				</textarea>
+				</p>
+ 
+				 
+			
+			<input type="submit" value="Valider" />
+			<br/>
+			<input type="reset" value="Annuler" />
+				
+
+
+			</form>
+
+
+		</fieldset>
+		
+	</body>
+	
+</html>                                                         
+                                                     
+ 
